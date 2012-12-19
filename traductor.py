@@ -48,17 +48,20 @@ def leer_parametros():
   from argparse import ArgumentParser
   parser = ArgumentParser(description='Permite traducir una frase del castellano al inglés.')
   parser.add_argument('frase', metavar='frase', help='frase a traducir (entre comillas)')
+  parser.add_argument('-d',    dest='idioma_destino', metavar='idioma destino', default='en', 
+    choices=['en', 'pt'], 
+    help='idioma destino: opciones validas: en, pt (inglés, portugués, por defecto inglés)')
   args = parser.parse_args()
-  return args.frase
+  return (args.frase, args.idioma_destino)
 
 # programa principal
 # 
 
 # leemos la frase que el usuario ingresó desde la línea de comandos
-frase = leer_parametros()
+(frase, idioma_destino) = leer_parametros()
 
 # traducimos la frase
-frase_traducida = traducir("es", "en", frase)
+frase_traducida = traducir("es", idioma_destino, frase)
 
 # imprimimos la frase traducida
 print frase_traducida
