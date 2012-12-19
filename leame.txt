@@ -1,0 +1,61 @@
+# traductor v1.0
+# Utilidad de línea de comandos para traducir frases del castellano al inglés
+# Copyright (C) 2012, opensas, opensas@gmail.com
+# Consulte al final de este archivo para ver los detalles de la licencia
+
+Traductor es una utilidad de línea de comandos que le permite traducir frases del idioma castellano al idioma inglés.
+
+1. Instalación
+
+Para ejecutar el programa deberá contar con el intérprete Python 2.7.3 o superior (puede obtenerlo en http://www.python.org/download/)
+
+Luego deberá copiar los siguientes archivos:
+
+traductor
+traductor.py
+traductor_lib.py
+
+En algún lugar disponible para ser ejecutados por el usuario.
+
+2. Uso
+
+Para usar el sistema, ingrese
+
+    traductor "frase en español a ser traducida al inglés"
+
+Y obtendrá la siguiente salida
+
+    phrase in Spanish to be translated into English
+
+Para obtener una ayuda en línea simplemente ingrese
+
+    traductor -h
+
+Y obtendrá la siguiente pantalla de ayuda
+
+    usage: traductor.py [-h] frase
+
+    Permite traducir una frase del castellano al inglés.
+
+    positional arguments:
+      frase       frase a traducir (entre comillas)
+    optional arguments:
+      -h, --help  show this help message and exit
+
+-----
+
+# traductor es software libre: usted puede redistribuirlo y/o modificarlo 
+# bajo los términos de la Licencia Pública General GNU publicada 
+# por la Fundación para el Software Libre, ya sea la versión 3 
+# de la Licencia, o (a su elección) cualquier versión posterior.
+
+# Este programa se distribuye con la esperanza de que sea útil, pero 
+# SIN GARANTÍA ALGUNA; ni siquiera la garantía implícita 
+# MERCANTIL o de APTITUD PARA UN PROPÓSITO DETERMINADO. 
+# Consulte los detalles de la Licencia Pública General GNU para obtener 
+# una información más detallada. 
+
+# Debería haber recibido una copia de la Licencia Pública General GNU 
+# junto a este programa. 
+# En caso contrario, consulte <http://www.gnu.org/licenses/>.
+
