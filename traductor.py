@@ -49,8 +49,8 @@ def leer_parametros():
   parser = ArgumentParser(description='Permite traducir una frase del castellano al inglés.')
   parser.add_argument('frase', metavar='frase', help='frase a traducir (entre comillas)')
   parser.add_argument('-d',    dest='idioma_destino', metavar='idioma destino', default='en', 
-    choices=['en', 'pt'], 
-    help='idioma destino: opciones validas: en, pt (inglés, portugués, por defecto inglés)')
+    choices=['en', 'pt', 'it'], 
+    help='idioma destino: opciones validas: en, pt, it (inglés, portugués o italiano, por defecto inglés)')
   args = parser.parse_args()
   return (args.frase, args.idioma_destino)
 
